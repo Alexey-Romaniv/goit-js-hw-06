@@ -32,4 +32,5 @@ function createBoxes(amount) {
 
 destroyBtn.addEventListener("click", (event) => {
   newBoxesPlace.innerHTML = "";
+  size = 30;
 });
