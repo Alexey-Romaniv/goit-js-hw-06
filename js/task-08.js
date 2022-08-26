@@ -9,10 +9,10 @@ function onFormSubmit(event) {
   if (!inputEmailRef.value || !inputPasswordRef.value) {
     return alert("Заполните все поля!");
   } else {
-    let { emailRef, passwordRef } = formRef.elements;
-    const email = emailRef.value;
-    const password = passwordRef.value;
-    const formData = { email, password };
+    let { email, password } = formRef.elements;
+    const emailRef = email.value;
+    const passwordRef = password.value;
+    const formData = { email: emailRef, password: passwordRef };
     console.log(formData);
     event.currentTarget.reset();
     return formData;
